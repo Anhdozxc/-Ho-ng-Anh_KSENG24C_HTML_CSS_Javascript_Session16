@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document HA</title>
+    <link
+      rel="icon"
+      href="https://png.pngtree.com/png-clipart/20220909/original/pngtree-3d-letter-a-logo-design-png-image_8513009.png"
+    />
+  </head>
+  <body>
+    <script>
+      // tạo biến string cho người dùng nhập chuỗi bất kì
+      let string = prompt("Mời bạn nhập chuỗi bất kì!");
+      // Sử dụng phương thức trim() để loại bỏ các kí tự là dấu cách ở phần đầu và cuối của chuỗi
+      let newString = string.trim();
+      // Tạo biến đếm count để đếm số lượng các từ
+      let count = 1;
+      // Duyệt từng phần tử trong chuỗi newString
+      for (let i = 0; i < newString.length - 1; i++) {
+        if (newString[i] !== " " && newString[i + 1] == " ") {
+          count++;
+        }
+        console.log(` Số lượng từ trong chuỗi ${string} là : ${count}`);
+      }
+    </script>
+  </body>
+</html>
