@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document HA</title>
+    <link
+      rel="icon"
+      href="https://png.pngtree.com/png-clipart/20220909/original/pngtree-3d-letter-a-logo-design-png-image_8513009.png"
+    />
+  </head>
+  <body>
+    <script>
+      let a = prompt("Nhập số thứ nhất:");
+      let b = prompt("Nhập số thứ hai:");
+
+      a = parseFloat(a); // Chuyển đổi chuỗi nhập vào thành số thực
+      b = parseFloat(b);
+
+      let min = Math.min(a, b);
+      let max = Math.max(a, b);
+
+      let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+      alert("Số ngẫu nhiên: " + randomNum);
+    </script>
+  </body>
+</html>
