@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Số ngẫu nhiên</title>
+  </head>
+  <body>
+    <script>
+      let a = prompt("Nhập số thứ nhất:");
+      let b = prompt("Nhập số thứ hai:");
+
+      a = parseFloat(a); // Chuyển đổi chuỗi nhập vào thành số thực
+      b = parseFloat(b);
+
+      let min = Math.min(a, b);
+      let max = Math.max(a, b);
+
+      let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+      alert("Số ngẫu nhiên: " + randomNum);
+    </script>
+  </body>
+</html>
